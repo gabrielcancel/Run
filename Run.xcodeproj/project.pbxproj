@@ -27,6 +27,7 @@
 		51CE674A281BD05C00D55878 /* Run_WatchKit_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CE6749281BD05C00D55878 /* Run_WatchKit_AppTests.swift */; };
 		51CE6754281BD05C00D55878 /* Run_WatchKit_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CE6753281BD05C00D55878 /* Run_WatchKit_AppUITests.swift */; };
 		51CE6756281BD05C00D55878 /* Run_WatchKit_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CE6755281BD05C00D55878 /* Run_WatchKit_AppUITestsLaunchTests.swift */; };
+		9C6A062E281BEECA00E600A6 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 9C6A062D281BEECA00E600A6 /* SwiftUICharts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -134,6 +135,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C6A062E281BEECA00E600A6 /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +308,9 @@
 				51CE6723281BD05B00D55878 /* PBXTargetDependency */,
 			);
 			name = Run;
+			packageProductDependencies = (
+				9C6A062D281BEECA00E600A6 /* SwiftUICharts */,
+			);
 			productName = Run;
 			productReference = 51CE66FC281BD05800D55878 /* Run.app */;
 			productType = "com.apple.product-type.application";
@@ -462,6 +467,9 @@
 				Base,
 			);
 			mainGroup = 51CE66F3281BD05800D55878;
+			packageReferences = (
+				9C6A062C281BEECA00E600A6 /* XCRemoteSwiftPackageReference "ChartView" */,
+			);
 			productRefGroup = 51CE66FD281BD05800D55878 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -742,7 +750,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Run WatchKit Extension/Preview Content\"";
-				DEVELOPMENT_TEAM = CHHAZ2253N;
+				DEVELOPMENT_TEAM = X3859BHWXD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Run WatchKit Extension/Info.plist";
@@ -756,7 +764,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "gabriel-cancel.Run.watchkitapp.watchkitextension";
+				PRODUCT_BUNDLE_IDENTIFIER = fr.clement.Run.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -774,7 +782,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Run WatchKit Extension/Preview Content\"";
-				DEVELOPMENT_TEAM = CHHAZ2253N;
+				DEVELOPMENT_TEAM = X3859BHWXD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Run WatchKit Extension/Info.plist";
@@ -788,7 +796,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "gabriel-cancel.Run.watchkitapp.watchkitextension";
+				PRODUCT_BUNDLE_IDENTIFIER = fr.clement.Run.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -808,14 +816,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = CHHAZ2253N;
+				DEVELOPMENT_TEAM = X3859BHWXD;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = Run_WatchKit_Extension;
 				INFOPLIST_KEY_CFBundleDisplayName = "Run WatchKit App";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "gabriel-cancel.Run";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = fr.clement.Run;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "gabriel-cancel.Run.watchkitapp";
+				PRODUCT_BUNDLE_IDENTIFIER = fr.clement.Run.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -834,14 +842,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = CHHAZ2253N;
+				DEVELOPMENT_TEAM = X3859BHWXD;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = Run_WatchKit_Extension;
 				INFOPLIST_KEY_CFBundleDisplayName = "Run WatchKit App";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "gabriel-cancel.Run";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = fr.clement.Run;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "gabriel-cancel.Run.watchkitapp";
+				PRODUCT_BUNDLE_IDENTIFIER = fr.clement.Run.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -861,7 +869,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Run/Preview Content\"";
-				DEVELOPMENT_TEAM = CHHAZ2253N;
+				DEVELOPMENT_TEAM = X3859BHWXD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -875,7 +883,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "gabriel-cancel.Run";
+				PRODUCT_BUNDLE_IDENTIFIER = fr.clement.Run;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -892,7 +900,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Run/Preview Content\"";
-				DEVELOPMENT_TEAM = CHHAZ2253N;
+				DEVELOPMENT_TEAM = X3859BHWXD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -906,7 +914,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "gabriel-cancel.Run";
+				PRODUCT_BUNDLE_IDENTIFIER = fr.clement.Run;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -923,7 +931,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = CHHAZ2253N;
+				DEVELOPMENT_TEAM = X3859BHWXD;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				MARKETING_VERSION = 1.0;
@@ -944,7 +952,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = CHHAZ2253N;
+				DEVELOPMENT_TEAM = X3859BHWXD;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				MARKETING_VERSION = 1.0;
@@ -963,9 +971,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = CHHAZ2253N;
+				DEVELOPMENT_TEAM = X3859BHWXD;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				MARKETING_VERSION = 1.0;
@@ -983,9 +992,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = CHHAZ2253N;
+				DEVELOPMENT_TEAM = X3859BHWXD;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				MARKETING_VERSION = 1.0;
@@ -1007,7 +1017,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = CHHAZ2253N;
+				DEVELOPMENT_TEAM = X3859BHWXD;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "gabriel-cancel.Run-WatchKit-AppTests";
@@ -1028,7 +1038,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = CHHAZ2253N;
+				DEVELOPMENT_TEAM = X3859BHWXD;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "gabriel-cancel.Run-WatchKit-AppTests";
@@ -1048,7 +1058,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = CHHAZ2253N;
+				DEVELOPMENT_TEAM = X3859BHWXD;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "gabriel-cancel.Run-WatchKit-AppUITests";
@@ -1067,7 +1077,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = CHHAZ2253N;
+				DEVELOPMENT_TEAM = X3859BHWXD;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "gabriel-cancel.Run-WatchKit-AppUITests";
@@ -1158,6 +1168,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9C6A062C281BEECA00E600A6 /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9C6A062D281BEECA00E600A6 /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9C6A062C281BEECA00E600A6 /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 51CE66F4281BD05800D55878 /* Project object */;
 }
