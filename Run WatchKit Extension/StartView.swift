@@ -21,3 +21,23 @@ struct ContentView_Previews: PreviewProvider {
         StartView()
     }
 }
+
+extension HKWorkoutActivityType: Identifiable {
+    public var id: UInt {
+        rawValue
+    }
+    
+    var name: String {
+        switch self {
+        case .running:
+            return "Run"
+        case .cycling:
+            return "Bike"
+        case .walking:
+            return "Walk"
+        default:
+            return ""
+        }
+    }
+}
+
