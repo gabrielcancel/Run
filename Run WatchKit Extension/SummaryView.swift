@@ -17,7 +17,57 @@ struct SummaryView: View {
         }()
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView(.vertical){
+            VStack(alignment: .leading){
+                SummaryMetricView(
+                    title: "Total Time",
+                    value: durationFormatter.string(from: 40 * 60 + 12) ?? ""
+                )
+                .accentColor(Color.yellow)
+                SummaryMetricView(
+                    title: "Total Distance",
+                    value: Measurement(
+                                value: 6728,
+                                unit: UnitLength.kilometers
+                    ).formatted(
+                        .measurement(
+                            width: .abbreviated,
+                            usage: .road
+                        )
+                    )
+                )
+                .accentColor(Color.green)
+                
+                SummaryMetricView(
+                    title: "Total Energy",
+                    value: Measurement(
+                            value: 728,
+                            unit: UnitEnergy.kilocalories
+                        ).formatted(
+                            .measurement(
+                                width: .abbreviated,
+                                usage: .workout
+                            )
+                        )
+                )
+                .accentColor(Color.pink)
+                SummaryMetricView(title: "Avg. Heart Rate",
+                                    value: 123
+                                        .formatted(
+                                            .number.precision(
+                                                .fractionLength(0)
+                                            )
+                                    )
+                                    + " bpm"
+                                    
+                ).accentColor(Color.red)
+                Button("Done"){
+                }
+            }
+            .scenePadding()
+        }
+        .navigationTitle("Summary")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
