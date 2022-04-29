@@ -1,23 +1,26 @@
 import SwiftUI
-import SwiftUICharts
 
 struct ContentView: View {
 
     var body: some View {
 
+        NavigationView {
 
-        List {
+            NavigationLink(destination: Heartbeat()) {
+                Text("Fréquence de rythme cardiaque")
+            }
+                    .navigationTitle("Fréquence de rythme cardiaque")
 
-            Text("Fréquence de rythme cardiaque")
+            NavigationLink(destination: Heartbeat()) {
+                Text("Temps moyen de marche")
+            }
 
-            Text("Temps moyen de marche")
+            NavigationLink(destination: Heartbeat()) {
+                Text("Calories dépensées")
+            }
 
-            Text("Calories dépensés")
-
-            Text(" .... ")
-            
-            MultiLineChartView(data: [([8,32,11,23,40,28], GradientColors.green), ([90,99,78,111,70,60,77], GradientColors.purple), ([34,56,72,38,43,100,50], GradientColors.orngPink)], title: "Progession")
 
         }
     }
 }
+

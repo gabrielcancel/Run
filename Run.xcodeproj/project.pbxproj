@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A7BCAE754E81382955C3209 /* Heartbeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7BC9891AB196B9DE88AF16 /* Heartbeat.swift */; };
 		51CE6700281BD05800D55878 /* RunApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CE66FF281BD05800D55878 /* RunApp.swift */; };
 		51CE6702281BD05800D55878 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CE6701281BD05800D55878 /* ContentView.swift */; };
 		51CE6704281BD05B00D55878 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51CE6703281BD05B00D55878 /* Assets.xcassets */; };
@@ -101,6 +102,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4A7BC9891AB196B9DE88AF16 /* Heartbeat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Heartbeat.swift; sourceTree = "<group>"; };
 		51CE66FC281BD05800D55878 /* Run.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Run.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51CE66FF281BD05800D55878 /* RunApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunApp.swift; sourceTree = "<group>"; };
 		51CE6701281BD05800D55878 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 				51CE6701281BD05800D55878 /* ContentView.swift */,
 				51CE6703281BD05B00D55878 /* Assets.xcassets */,
 				51CE6705281BD05B00D55878 /* Preview Content */,
+				4A7BC9891AB196B9DE88AF16 /* Heartbeat.swift */,
 			);
 			path = Run;
 			sourceTree = "<group>";
@@ -549,6 +552,7 @@
 			files = (
 				51CE6702281BD05800D55878 /* ContentView.swift in Sources */,
 				51CE6700281BD05800D55878 /* RunApp.swift in Sources */,
+				4A7BCAE754E81382955C3209 /* Heartbeat.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
