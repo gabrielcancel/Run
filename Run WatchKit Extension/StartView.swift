@@ -9,6 +9,7 @@ import SwiftUI
 import HealthKit
 
 struct StartView: View {
+    var workoutTypes: [HKWorkoutActivityType] = [.running, .cycling, .walking]
     var body: some View {
         Text("Hello, World!")
             .padding()
