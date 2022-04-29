@@ -30,7 +30,25 @@ struct MetricsView: View {
                 )
                 + "bpm"
             )
+            Text(
+                Measurement(
+                    value: 100 * 1.609,
+                    unit: UnitLength.kilometers
+                ).formatted(
+                    .measurement(
+                        width: .abbreviated,
+                        usage: .road
+                    )
+                )
+            )
         }
+        .font(.system(.title, design: .rounded)
+            .monospacedDigit()
+            .lowercaseSmallCaps()
+        )
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .ignoresSafeArea(edges: .bottom)
+        .scenePadding()
     }
 }
 
