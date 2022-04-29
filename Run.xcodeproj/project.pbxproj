@@ -18,7 +18,7 @@
 		51CE6726281BD05C00D55878 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51CE6725281BD05C00D55878 /* Assets.xcassets */; };
 		51CE672C281BD05C00D55878 /* Run WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 51CE672B281BD05C00D55878 /* Run WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		51CE6731281BD05C00D55878 /* RunApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CE6730281BD05C00D55878 /* RunApp.swift */; };
-		51CE6733281BD05C00D55878 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CE6732281BD05C00D55878 /* ContentView.swift */; };
+		51CE6733281BD05C00D55878 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CE6732281BD05C00D55878 /* StartView.swift */; };
 		51CE6735281BD05C00D55878 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CE6734281BD05C00D55878 /* NotificationController.swift */; };
 		51CE6737281BD05C00D55878 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CE6736281BD05C00D55878 /* NotificationView.swift */; };
 		51CE6739281BD05C00D55878 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CE6738281BD05C00D55878 /* ComplicationController.swift */; };
@@ -114,7 +114,7 @@
 		51CE6725281BD05C00D55878 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51CE672B281BD05C00D55878 /* Run WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Run WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		51CE6730281BD05C00D55878 /* RunApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunApp.swift; sourceTree = "<group>"; };
-		51CE6732281BD05C00D55878 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		51CE6732281BD05C00D55878 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		51CE6734281BD05C00D55878 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		51CE6736281BD05C00D55878 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		51CE6738281BD05C00D55878 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
@@ -251,7 +251,7 @@
 			isa = PBXGroup;
 			children = (
 				51CE6730281BD05C00D55878 /* RunApp.swift */,
-				51CE6732281BD05C00D55878 /* ContentView.swift */,
+				51CE6732281BD05C00D55878 /* StartView.swift */,
 				51CE6734281BD05C00D55878 /* NotificationController.swift */,
 				51CE6736281BD05C00D55878 /* NotificationView.swift */,
 				51CE6738281BD05C00D55878 /* ComplicationController.swift */,
@@ -566,7 +566,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				51CE6735281BD05C00D55878 /* NotificationController.swift in Sources */,
-				51CE6733281BD05C00D55878 /* ContentView.swift in Sources */,
+				51CE6733281BD05C00D55878 /* StartView.swift in Sources */,
 				51CE6739281BD05C00D55878 /* ComplicationController.swift in Sources */,
 				51CE6731281BD05C00D55878 /* RunApp.swift in Sources */,
 				51CE6737281BD05C00D55878 /* NotificationView.swift in Sources */,
