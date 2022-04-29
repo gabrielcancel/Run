@@ -10,9 +10,10 @@ import SwiftUI
 struct MetricsView: View {
     var body: some View {
         VStack(alignment: .leading){
-            Text("11:10:34")
-                .foregroundColor(Color.green)
-                .fontWeight(.semibold)
+            ElapsedTimeView(
+                elapsedTime: 2 * 60 + 15.25,
+                showSubseconds: true
+            ).foregroundColor(Color.green)
             Text(
                 Measurement(
                     value: 47,
