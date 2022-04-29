@@ -11,8 +11,17 @@ import HealthKit
 struct StartView: View {
     var workoutTypes: [HKWorkoutActivityType] = [.running, .cycling, .walking]
     var body: some View {
-        Text("Hello, World!")
-            .padding()
+        List(workoutTypes) { workoutType in
+            NavigationLink(
+                workoutType.name,
+                destination: Text(workoutType.name)
+            ).padding(
+                EdgeInsets(top:15, leading: 5, bottom: 15, trailing: 5)
+            )
+        }
+        .listStyle(.carousel)
+        .navigationTitle("Workouts")
+        
     }
 }
 
