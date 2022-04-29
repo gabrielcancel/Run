@@ -8,6 +8,14 @@
 import SwiftUI
 
 struct SummaryView: View {
+    @State private var durationFormatter:
+        DateComponentsFormatter = {
+            let formatter = DateComponentsFormatter()
+            formatter.allowedUnits = [.hour, .minute, .second]
+            formatter.zeroFormattingBehavior = .pad
+            return formatter
+        }()
+    
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
