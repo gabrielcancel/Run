@@ -29,7 +29,7 @@ struct MetricsView: View {
                 153.formatted(
                     .number.precision(.fractionLength(0))
                 )
-                + "bpm"
+                + " bpm"
             )
             Text(
                 Measurement(
