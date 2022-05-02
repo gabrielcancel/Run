@@ -63,7 +63,31 @@ class WorkoutManager: NSObject, ObservableObject {
             
         }
     }
-
+    
+    // States
+    
+    // Initial State
+    @Published var running = false
+    
+    func pause() {
+        session?.pause()
+    }
+    
+    func resume() {
+        session?.resume()
+    }
+    
+    func togglePause() {
+        if running == true {
+            pause()
+        } else {
+            resume()
+        }
+    }
+    
+    func endWorkout() {
+        session?.end()
+    }
 }
     
 
