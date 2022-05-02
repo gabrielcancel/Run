@@ -9,5 +9,14 @@ import Foundation
 import HealthKit
 
 class WorkoutManager: NSObject, ObservableObject {
+    var selectedWorkoout: HKWorkoutActivityType?
     
+    let healthStore = HKHealthStore()
+    var session: HKWorkoutSession?
+    var builder: HKWorkoutBuilder?
+
+
+
+
 }
+    
