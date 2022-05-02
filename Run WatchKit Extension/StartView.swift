@@ -18,14 +18,16 @@ struct StartView: View {
                 workoutType.name,
                 destination: SessionPagingView(),
                 tag: workoutType,
-                selection: $workoutManager.selectedWorkoout
+                selection: $workoutManager.selectedWorkout
             ).padding(
                 EdgeInsets(top:15, leading: 5, bottom: 15, trailing: 5)
             )
         }
         .listStyle(.carousel)
         .navigationTitle("Workouts")
-        
+        .onAppear {
+            workoutManager.requestAuthorization()
+        }
     }
 }
 

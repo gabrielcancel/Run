@@ -9,7 +9,12 @@ import Foundation
 import HealthKit
 
 class WorkoutManager: NSObject, ObservableObject {
-    var selectedWorkoout: HKWorkoutActivityType?
+    var selectedWorkout: HKWorkoutActivityType? {
+        didSet {
+            guard let selectedWorkout = selectedWorkout else { return }
+            startWorkout(workoutType: selectedWorkout)
+        }
+    }
     
     let healthStore = HKHealthStore()
     var session: HKWorkoutSession?
@@ -38,7 +43,26 @@ class WorkoutManager: NSObject, ObservableObject {
             // Workout started
         }
     }
-
+    
+    
+    func requestAuthorization() {
+        let typeToShare: Set = [
+            HKQuantityType.workoutType()
+        ]
+        
+        let typeToRead: Set = [
+            HKQuantityType.quantityType(forIdentifier: .heartRate)!,
+            HKQuantityType.quantityType(forIdentifier: .activeEnergyBurned)!,
+            HKQuantityType.quantityType(forIdentifier: .distanceWalkingRunning)!,
+            HKQuantityType.quantityType(forIdentifier: .distanceCycling)!,
+            HKObjectType.activitySummaryType()
+        ]
+        
+        healthStore.requestAuthorization(toShare: typeToShare, read: typeToRead)
+        { (sucess, error) in
+            
+        }
+    }
 
 }
     
