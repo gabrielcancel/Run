@@ -37,6 +37,8 @@ class WorkoutManager: NSObject, ObservableObject {
             workoutConfiguration: configuration
         )
         
+        session?.delegate = self
+        
         let startDate = Date()
         session?.startActivity(with: startDate)
         builder?.beginCollection(withStart: startDate) {(success, error) in
@@ -87,6 +89,31 @@ class WorkoutManager: NSObject, ObservableObject {
     
     func endWorkout() {
         session?.end()
+    }
+}
+
+
+
+// MARK: - HKWorkoutSessionDelegate
+extension WorkoutManager: HKWorkoutSessionDelegate {
+    func workoutSession(_ workoutSession: HKWorkoutSession, didChangeTo toState: HKWorkoutSessionState,
+                        from fromState: HKWorkoutSessionState, date: Date) {
+        DispatchQueue.main.async {
+            self.running = toState == .running
+        }
+
+        // Wait for the session to transition states before ending the builder.
+        if toState == .ended {
+            builder?.endCollection(withEnd: date) { (success, error) in
+                self.builder?.finishWorkout { (workout, error) in
+                    
+                }
+            }
+        }
+    }
+
+    func workoutSession(_ workoutSession: HKWorkoutSession, didFailWithError error: Error) {
+
     }
 }
     
