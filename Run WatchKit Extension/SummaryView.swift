@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import HealthKit
 
 struct SummaryView: View {
     @State private var durationFormatter:
@@ -61,6 +62,10 @@ struct SummaryView: View {
                                     + " bpm"
                                     
                 ).accentColor(Color.red)
+                Text("Activiy Rings")
+                ActivityRingsView(
+                    healthStore: HKHealthStore()
+                ).frame(width: 50, height: 50)
                 Button("Done"){
                 }
             }
