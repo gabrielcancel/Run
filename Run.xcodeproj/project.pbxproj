@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		518E581E281C26D2004CEC52 /* ActivityRingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518E581D281C26D2004CEC52 /* ActivityRingsView.swift */; };
 		51CE6700281BD05800D55878 /* RunApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CE66FF281BD05800D55878 /* RunApp.swift */; };
 		51CE6702281BD05800D55878 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CE6701281BD05800D55878 /* ContentView.swift */; };
 		51CE6704281BD05B00D55878 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51CE6703281BD05B00D55878 /* Assets.xcassets */; };
@@ -31,6 +32,7 @@
 		51CE6773281BE19D00D55878 /* MetricsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CE6772281BE19D00D55878 /* MetricsView.swift */; };
 		51CE6775281BEA4800D55878 /* ElapseTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CE6774281BEA4800D55878 /* ElapseTimeView.swift */; };
 		51CE6777281BF30A00D55878 /* ControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CE6776281BF30A00D55878 /* ControlsView.swift */; };
+		51CE6779281C0BBA00D55878 /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CE6778281C0BBA00D55878 /* SummaryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +106,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		518E581D281C26D2004CEC52 /* ActivityRingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityRingsView.swift; sourceTree = "<group>"; };
 		51CE66FC281BD05800D55878 /* Run.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Run.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51CE66FF281BD05800D55878 /* RunApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunApp.swift; sourceTree = "<group>"; };
 		51CE6701281BD05800D55878 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -135,6 +138,7 @@
 		51CE6772281BE19D00D55878 /* MetricsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricsView.swift; sourceTree = "<group>"; };
 		51CE6774281BEA4800D55878 /* ElapseTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElapseTimeView.swift; sourceTree = "<group>"; };
 		51CE6776281BF30A00D55878 /* ControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlsView.swift; sourceTree = "<group>"; };
+		51CE6778281C0BBA00D55878 /* SummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,6 +264,8 @@
 			children = (
 				51CE6730281BD05C00D55878 /* RunApp.swift */,
 				51CE6732281BD05C00D55878 /* StartView.swift */,
+				51CE6778281C0BBA00D55878 /* SummaryView.swift */,
+				518E581D281C26D2004CEC52 /* ActivityRingsView.swift */,
 				51CE6770281BDFA600D55878 /* SessionPagingView.swift */,
 				51CE6772281BE19D00D55878 /* MetricsView.swift */,
 				51CE6776281BF30A00D55878 /* ControlsView.swift */,
@@ -580,10 +586,12 @@
 				51CE6735281BD05C00D55878 /* NotificationController.swift in Sources */,
 				51CE6777281BF30A00D55878 /* ControlsView.swift in Sources */,
 				51CE6773281BE19D00D55878 /* MetricsView.swift in Sources */,
+				518E581E281C26D2004CEC52 /* ActivityRingsView.swift in Sources */,
 				51CE6733281BD05C00D55878 /* StartView.swift in Sources */,
 				51CE6775281BEA4800D55878 /* ElapseTimeView.swift in Sources */,
 				51CE6739281BD05C00D55878 /* ComplicationController.swift in Sources */,
 				51CE6731281BD05C00D55878 /* RunApp.swift in Sources */,
+				51CE6779281C0BBA00D55878 /* SummaryView.swift in Sources */,
 				51CE6737281BD05C00D55878 /* NotificationView.swift in Sources */,
 				51CE6771281BDFA600D55878 /* SessionPagingView.swift in Sources */,
 			);
