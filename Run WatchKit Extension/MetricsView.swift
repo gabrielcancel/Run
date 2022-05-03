@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct MetricsView: View {
+    @EnvironmentObject var workoutManager: WorkoutManager
     var body: some View {
         VStack(alignment: .leading){
             ElapsedTimeView(
