@@ -16,6 +16,14 @@ class WorkoutManager: NSObject, ObservableObject {
         }
     }
     
+    @Published var showingSummaryView: Bool = false {
+        didSet {
+            if showingSummaryView == false {
+                selectedWorkout = nil
+            }
+        }
+    }
+    
     let healthStore = HKHealthStore()
     var session: HKWorkoutSession?
     var builder: HKLiveWorkoutBuilder?
@@ -89,6 +97,7 @@ class WorkoutManager: NSObject, ObservableObject {
     
     func endWorkout() {
         session?.end()
+        showingSummaryView = true
     }
 }
 

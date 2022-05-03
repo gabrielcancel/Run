@@ -25,7 +25,15 @@ struct SessionPagingView: View {
         .navigationTitle(workoutManager.selectedWorkout?.name ?? "")
         .navigationBarBackButtonHidden(true)
         .navigationBarHidden(selection == .nowPlaying)
-        
+        .onChange(of: workoutManager.running) { _ in
+            displayMetricsView()
+        }
+    }
+    
+    private func displayMetricsView() {
+        withAnimation {
+            selection = .metrics
+        }
     }
 }
 
