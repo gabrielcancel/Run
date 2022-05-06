@@ -10,9 +10,9 @@
 		513EC0C328200E9300EE20A8 /* WorkoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513EC0C228200E9300EE20A8 /* WorkoutManager.swift */; };
 		513EC0C72820252D00EE20A8 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 513EC0C62820252D00EE20A8 /* HealthKit.framework */; };
 		518E581E281C26D2004CEC52 /* ActivityRingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518E581D281C26D2004CEC52 /* ActivityRingsView.swift */; };
+		518EBF8828251B4900C421B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 518EBF8728251B4900C421B4 /* Assets.xcassets */; };
 		51CE6700281BD05800D55878 /* RunApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CE66FF281BD05800D55878 /* RunApp.swift */; };
 		51CE6702281BD05800D55878 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CE6701281BD05800D55878 /* ContentView.swift */; };
-		51CE6704281BD05B00D55878 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51CE6703281BD05B00D55878 /* Assets.xcassets */; };
 		51CE6707281BD05B00D55878 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51CE6706281BD05B00D55878 /* Preview Assets.xcassets */; };
 		51CE6711281BD05B00D55878 /* RunTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CE6710281BD05B00D55878 /* RunTests.swift */; };
 		51CE671B281BD05B00D55878 /* RunUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CE671A281BD05B00D55878 /* RunUITests.swift */; };
@@ -113,10 +113,10 @@
 		513EC0C62820252D00EE20A8 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS8.5.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 		513EC0C82820293800EE20A8 /* Run WatchKit ExtensionDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Run WatchKit ExtensionDebug.entitlements"; sourceTree = "<group>"; };
 		518E581D281C26D2004CEC52 /* ActivityRingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityRingsView.swift; sourceTree = "<group>"; };
+		518EBF8728251B4900C421B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51CE66FC281BD05800D55878 /* Run.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Run.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51CE66FF281BD05800D55878 /* RunApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunApp.swift; sourceTree = "<group>"; };
 		51CE6701281BD05800D55878 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		51CE6703281BD05B00D55878 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51CE6706281BD05B00D55878 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		51CE670C281BD05B00D55878 /* RunTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RunTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		51CE6710281BD05B00D55878 /* RunTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunTests.swift; sourceTree = "<group>"; };
@@ -234,9 +234,9 @@
 		51CE66FE281BD05800D55878 /* Run */ = {
 			isa = PBXGroup;
 			children = (
+				518EBF8728251B4900C421B4 /* Assets.xcassets */,
 				51CE66FF281BD05800D55878 /* RunApp.swift */,
 				51CE6701281BD05800D55878 /* ContentView.swift */,
-				51CE6703281BD05B00D55878 /* Assets.xcassets */,
 				51CE6705281BD05B00D55878 /* Preview Content */,
 			);
 			path = Run;
@@ -519,8 +519,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				518EBF8828251B4900C421B4 /* Assets.xcassets in Resources */,
 				51CE6707281BD05B00D55878 /* Preview Assets.xcassets in Resources */,
-				51CE6704281BD05B00D55878 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
