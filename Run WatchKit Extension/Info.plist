@@ -12,5 +12,15 @@
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.watchkit</string>
 	</dict>
+	<key>UIBackgroundModes</key>
+	<array/>
+	<key>NSHealthShareUsageDescription</key>
+	<string>You workout related data will be used to display you saved workouts in Run.</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>Workouts tracked by Run on Apple Watch will be saved to HealthKit.</string>
+	<key>WKBackgroundModes</key>
+	<array>
+		<string>workout-processing</string>
+	</array>
 </dict>
 </plist>
