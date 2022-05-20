@@ -37,6 +37,27 @@ struct ContentView: View {
                 }) {
                     Text("Button")
                 }
+
+        NavigationView {
+            VStack {
+                NavigationLink(destination: Heartbeat()) {
+                    Text("\nFréquence de rythme cardiaque")
+                }
+                        .navigationTitle("")
+
+                NavigationLink(destination: Heartbeat()) {
+                    Text("\nTemps moyen de marche")
+                }
+
+
+                NavigationLink(destination: Heartbeat()) {
+                    Text("\nCalories dépensées")
+                }
+
+
+
+            }
+        }
     }
 }
 
