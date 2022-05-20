@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		513EC0C328200E9300EE20A8 /* WorkoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513EC0C228200E9300EE20A8 /* WorkoutManager.swift */; };
 		513EC0C72820252D00EE20A8 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 513EC0C62820252D00EE20A8 /* HealthKit.framework */; };
+		516B52912837729400D1E707 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 516B52902837729400D1E707 /* HealthKit.framework */; };
 		518E581E281C26D2004CEC52 /* ActivityRingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518E581D281C26D2004CEC52 /* ActivityRingsView.swift */; };
 		518EBF8828251B4900C421B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 518EBF8728251B4900C421B4 /* Assets.xcassets */; };
 		51CE6700281BD05800D55878 /* RunApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CE66FF281BD05800D55878 /* RunApp.swift */; };
@@ -112,6 +113,8 @@
 		513EC0C42820252D00EE20A8 /* Run WatchKit ExtensionRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Run WatchKit ExtensionRelease.entitlements"; sourceTree = "<group>"; };
 		513EC0C62820252D00EE20A8 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS8.5.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 		513EC0C82820293800EE20A8 /* Run WatchKit ExtensionDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Run WatchKit ExtensionDebug.entitlements"; sourceTree = "<group>"; };
+		516B528F2837729400D1E707 /* Run.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Run.entitlements; sourceTree = "<group>"; };
+		516B52902837729400D1E707 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 		518E581D281C26D2004CEC52 /* ActivityRingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityRingsView.swift; sourceTree = "<group>"; };
 		518EBF8728251B4900C421B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51CE66FC281BD05800D55878 /* Run.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Run.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -152,6 +155,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				516B52912837729400D1E707 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +201,7 @@
 		513EC0C52820252D00EE20A8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				516B52902837729400D1E707 /* HealthKit.framework */,
 				513EC0C62820252D00EE20A8 /* HealthKit.framework */,
 			);
 			name = Frameworks;
@@ -234,6 +239,7 @@
 		51CE66FE281BD05800D55878 /* Run */ = {
 			isa = PBXGroup;
 			children = (
+				516B528F2837729400D1E707 /* Run.entitlements */,
 				518EBF8728251B4900C421B4 /* Assets.xcassets */,
 				51CE66FF281BD05800D55878 /* RunApp.swift */,
 				51CE6701281BD05800D55878 /* ContentView.swift */,
@@ -904,12 +910,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Run/Run.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Run/Preview Content\"";
 				DEVELOPMENT_TEAM = CHHAZ2253N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Need to Share your health data";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Need to Update Regsiter data";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -935,12 +944,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Run/Run.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Run/Preview Content\"";
 				DEVELOPMENT_TEAM = CHHAZ2253N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Need to Share your health data";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Need to Update Regsiter data";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
