@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4A7BC04ACE849204AD44C5A7 /* Bike.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7BC40EDD09CF625893141B /* Bike.swift */; };
-		4A7BC36CB4A28CA95B354440 /* Run.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7BC2144F97DA0AB9FF79DE /* Run.swift */; };
-		4A7BC6EE80195A3856D2DCDB /* Walk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7BCF0B69BA864EE56F8130 /* Walk.swift */; };
 		513EC0C328200E9300EE20A8 /* WorkoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513EC0C228200E9300EE20A8 /* WorkoutManager.swift */; };
 		513EC0C72820252D00EE20A8 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 513EC0C62820252D00EE20A8 /* HealthKit.framework */; };
 		516B52912837729400D1E707 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 516B52902837729400D1E707 /* HealthKit.framework */; };
@@ -139,9 +136,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4A7BC2144F97DA0AB9FF79DE /* Run.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Run.swift; sourceTree = "<group>"; };
-		4A7BC40EDD09CF625893141B /* Bike.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bike.swift; sourceTree = "<group>"; };
-		4A7BCF0B69BA864EE56F8130 /* Walk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Walk.swift; sourceTree = "<group>"; };
 		513EC0C228200E9300EE20A8 /* WorkoutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutManager.swift; sourceTree = "<group>"; };
 		513EC0C42820252D00EE20A8 /* Run WatchKit ExtensionRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Run WatchKit ExtensionRelease.entitlements"; sourceTree = "<group>"; };
 		513EC0C62820252D00EE20A8 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS8.5.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -301,9 +295,6 @@
 				51CE66FF281BD05800D55878 /* RunApp.swift */,
 				51CE6701281BD05800D55878 /* ContentView.swift */,
 				51CE6705281BD05B00D55878 /* Preview Content */,
-				4A7BC2144F97DA0AB9FF79DE /* Run.swift */,
-				4A7BCF0B69BA864EE56F8130 /* Walk.swift */,
-				4A7BC40EDD09CF625893141B /* Bike.swift */,
 			);
 			path = Run;
 			sourceTree = "<group>";
@@ -696,9 +687,6 @@
 				51CE6702281BD05800D55878 /* ContentView.swift in Sources */,
 				51CE6700281BD05800D55878 /* RunApp.swift in Sources */,
 				9CC8DD6928393D0000B9C4DB /* WidgetExtension.intentdefinition in Sources */,
-				4A7BC36CB4A28CA95B354440 /* Run.swift in Sources */,
-				4A7BC6EE80195A3856D2DCDB /* Walk.swift in Sources */,
-				4A7BC04ACE849204AD44C5A7 /* Bike.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
