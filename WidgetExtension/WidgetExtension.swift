@@ -39,9 +39,7 @@ struct WidgetExtensionEntryView : View {
 
     var body: some View {
         //Text(entry.date, style: .time)
-
-        PieChartView(data: [8,23,44,30,2, 10], title: "Title", legend: "", style: Styles.barChartStyleNeonBlueDark)
-
+        PieChartView(data: [1797, 10000], title: "Title",legend: "", style: Styles.barChartStyleNeonBlueDark)
 
     }
 }
