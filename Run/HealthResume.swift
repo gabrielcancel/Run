@@ -242,35 +242,110 @@ struct Resume: View {
 
 
                     HStack {
+                        VStack{
+                            Text("M'entraîner")
+                                    .font(.title2)
+                                    .fontWeight(.bold)
+                                    .padding(.top, 10)
+
+                            Text("En minutes")
+                                    .font(.title3)
+                                    .fontWeight(.light)
+                                    .padding(.bottom, 5)
+
+                        }
+                                .offset(x: -55)
+
+
+                        VStack{
+                            Text("Bouger")
+                                    .font(.title2)
+                                    .fontWeight(.bold)
+                                    .padding(.top, 10)
+
+                            Text("En Kcal")
+                                    .font(.title3)
+                                    .fontWeight(.light)
+                                    .padding(.bottom, 5)
+
+                        }
+                                .offset(x: 35)
+
+                    }
+                    HStack {
+                        let barChartStyle1 = ChartStyle(backgroundColor: Color.white, accentColor: Colors.LegendColor, secondGradientColor: Colors.OrangeEnd, textColor: Color.black, legendTextColor: Colors.LegendDarkColor, dropShadowColor: Color.gray )
+                        let barChartStyle2 = ChartStyle(backgroundColor: Color.white, accentColor: Colors.OrangeEnd, secondGradientColor: Colors.LegendColor, textColor: Color.black, legendTextColor: Colors.LegendDarkColor, dropShadowColor: Color.gray )
 
 
                         BarChartView(data: ChartData(values: [("J-7", exerciseTime[0]), ("J-6", exerciseTime[1]),
                                                               ("J-5", exerciseTime[2]), ("J-4", exerciseTime[3]),
                                                               ("J-3", exerciseTime[4]), ("J-2", exerciseTime[5]),
                                                               ("J-1", exerciseTime[6])]),
-                                title: "M'entraîner", legend: "En minute")
+                                title: "M'entraîner", legend: "En minute", style: barChartStyle1)
 
                         BarChartView(data: ChartData(values: [("J-7", 132), ("J-6", 434),
                                                               ("J-5", 393), ("J-4", 445),
                                                               ("J-3", 230), ("J-2", 93),
                                                               ("J-1", 263)]),
-                                title: "Bouger", legend: "En KCal")
+                                title: "Bouger", legend: "En KCal", style: barChartStyle2)
 
                     }
                             .padding(.vertical, 15)
 
-                    BarChartView(data: ChartData(points: [3, 12, 11, 16, 11, 1, 9]), title: "Me lever",legend: "En heure",form: ChartForm.extraLarge)
+                    Text("Me lever")
+                            .font(.title2)
+                            .fontWeight(.bold)
+                            .padding(.top, 10)
+
+                    Text("En minutes")
+                            .font(.title3)
+                            .fontWeight(.light)
+                            .padding(.bottom, 5)
+
+                    let meLeverStyle = ChartStyle(backgroundColor: Color.white, accentColor: Colors.IndicatorKnob, secondGradientColor: Colors.LegendColor, textColor: Color.black, legendTextColor: Colors.LegendDarkColor, dropShadowColor: Color.gray )
+
+                    BarChartView(data: ChartData(points: [3, 12, 11, 16, 11, 1, 9]), title: "Me lever",legend: "En heure", style: meLeverStyle, form: ChartForm.extraLarge)
                             .frame(height: 200)
                             .padding(.horizontal, 10)
                             .padding(.vertical, 30)
 
 
-                    PieChartView(data: [1797, 10000], title: "Nombre de pas quotidien", legend: "", style: Styles.barChartStyleNeonBlueDark)
+                    Text("Nombres de pas")
+                            .font(.title2)
+                            .fontWeight(.bold)
+                            .padding(.top, 15)
+
+                    Text("Sur la semaine")
+                            .font(.title3)
+                            .fontWeight(.light)
+                            .padding(.bottom, 5)
+
+                    let chartStyle = ChartStyle(backgroundColor: Color.white, accentColor: Colors.OrangeStart, secondGradientColor: Colors.OrangeEnd, textColor: Color.black, legendTextColor: Color.orange, dropShadowColor: Color.gray )
+                    PieChartView(data: [1797, 10000], title: "Nombre de pas quotidien", legend: "", style: chartStyle, dropShadow: true)
                             .padding(.vertical, 20)
-                    MultiLineChartView(data: [([8, 32, 11, 23, 40, 28], GradientColors.green), ([90, 99, 78, 111, 70, 60, 77], GradientColors.purple), ([34, 56, 72, 38, 43, 100, 50], GradientColors.orngPink)], title: "Progession")
-                    BarChartView(data: ChartData(values: [("2018 Q4", 63150), ("2019 Q1", 50900), ("2019 Q2", 77550), ("2019 Q3", 79600), ("2019 Q4", 92550)]), title: "Sales", legend: "Quarterly") // legend is optional
 
                 }
+
+                    Text("À venir ...")
+                            .font(.title)
+                            .fontWeight(.bold)
+                            .foregroundColor(Color.gray)
+                            .padding(.vertical, 20)
+
+                Text("Comparaison du rythme cardique")
+                        .font(.title2)
+                        .fontWeight(.bold)
+                        .padding(.top, 15)
+
+                Text("Sur 3 jours")
+                        .font(.title3)
+                        .fontWeight(.light)
+                        .padding(.bottom, 5)
+
+                MultiLineChartView(data: [([8, 32, 11, 23, 40, 28], GradientColors.green), ([90, 99, 78, 111, 70, 60, 77], GradientColors.purple), ([34, 56, 72, 38, 43, 100, 50], GradientColors.orngPink)], title: "         🩺 🫀")
+
+
+
             }
                     .navigationTitle("Resume Health Data")
 
