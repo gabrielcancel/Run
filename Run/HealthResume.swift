@@ -248,7 +248,7 @@ struct Resume: View {
                                     .fontWeight(.bold)
                                     .padding(.top, 10)
 
-                            Text("En minutes")
+                            Text("En heure")
                                     .font(.title3)
                                     .fontWeight(.light)
                                     .padding(.bottom, 5)
