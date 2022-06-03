@@ -7,32 +7,46 @@
 
 ## B2 Info - Toulouse Ynov Campus
 
-<a href="https://zupimages.net/viewer.php?id=22/22/nhps.png"><img src="https://zupimages.net/up/22/22/nhps.png" alt="" /></a>
-
+<div style="text-align: center; ">
+<img src="https://zupimages.net/up/22/22/nhps.png" alt="" height="100" style="border-radius: 25px; text-align: center"/>
+</div>
 
 <hr>
 
-## Déscription
+## Description
+Dans le cadre du module _Suivi projet Dev_, nous avons décidé de créer une application en Swift pour approfondir 
+nos compétences dans ce language et pour découvrir la création d'application WatchOS,
+l'implémentation de HealthKit et des Widgets.
 
-Run est un application iOS & WatchOS permettant de faire un suivi d'éxercice sportif et permettant également
-d'afficher des statistiques sur l'application iOS via HealthKit.
+**Run** est un application iOS & WatchOS permettant de faire un suivi d'exercice sportif (Via Apple Watch) et permettant également
+d'afficher des statistiques de votre activité sur l'application iOS via HealthKit.
 
 ## Démonstration
 
 ### WatchOS
+<div style="text-align: center">
 
-<img src="https://zupimages.net/up/22/22/hzyq.png" alt="" />
-<img src="https://zupimages.net/up/22/22/ihb4.png" alt="" />
-<img src="https://zupimages.net/up/22/22/db2w.png" alt="" />
+<img src="https://zupimages.net/up/22/22/hzyq.png" alt="" height="250"/>
+<img src="https://zupimages.net/up/22/22/ihb4.png" alt="" height="250"/>
+<img src="https://zupimages.net/up/22/22/db2w.png" alt=""  height="250"/>
+</div>
 
 
 ### iOS
 
-Implémentation d'un Widget sur le HomeScreen.
-<img src="https://zupimages.net/up/22/22/2gjz.jpg" alt="" />
+#### Implémentation d'un Widget personnalisable sur le HomeScreen.
+<div style="text-align: center">
+<img src="https://zupimages.net/up/22/22/2gjz.jpg" alt="" height="300" />
 
+</div>
 
-<img src="https://zupimages.net/up/22/22/0myx.png" alt="" />
-<img src="https://zupimages.net/up/22/22/v6kt.png" alt="" />
-<img src="https://zupimages.net/up/22/22/q1mt.png" alt="" />
-Application
+<br>
+
+#### Visuel de l'application iOS
+
+<div style="text-align: center">
+
+<img src="https://zupimages.net/up/22/22/0myx.png" alt="" height="450"/>
+<img src="https://zupimages.net/up/22/22/v6kt.png" alt="" height="450"/>
+<img src="https://zupimages.net/up/22/22/q1mt.png" alt="" height="450"/>
+</div>
