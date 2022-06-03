@@ -50,3 +50,13 @@ d'afficher des statistiques de votre activité sur l'application iOS via HealthK
 <img src="https://zupimages.net/up/22/22/v6kt.png" alt="" height="450"/>
 <img src="https://zupimages.net/up/22/22/q1mt.png" alt="" height="450"/>
 </div>
+
+
+##### Pour avoir l'accès aux données de HealthKit, veuillez accepter les autorisations demandées dans l'application.
+
+<div style="text-align: center">
+<img src="https://zupimages.net/up/22/22/pgz4.png" alt="" height="450"/>
+</div>
+
+## Crédits
+#### [Addario Clément](https://github.com/ClementAdd) & [Gabriel Cancel](https://github.com/gabrielcancel), B2 Informatique - Toulouse Ynov Campus
